@@ -1,0 +1,184 @@
+/* общие */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* wrapper */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* меню хедера */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../assets/img/header.png");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  padding: 10px 15px;
+  margin: 5px 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.25s ease-in-out;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* обертка мейн */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  margin: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.about {
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+
+.about_block {
+  flex: 1;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -100px;
+  left: 30%;
+  transform: translateX(-50%);
+  margin: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+.calls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.button a {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  justify-content: center;
+}
+
+.short_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1.3;
+  align-items: left;
+  padding: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icons a {
+  margin: 0 20px;
+}
+
+.icons img {
+  width: 50px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  margin: 0 20px;
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
+
+#rs img {
+  width: 80px;
+  height: auto;
+}

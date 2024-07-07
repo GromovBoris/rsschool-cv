@@ -7,7 +7,7 @@
 - E-mail: drunkgonzo@gmail.com
 - GitHub: GromovBoris
 - Discord: drunkgonzo
-- Location: Baku
+- Location: Moscow
 
 ---
 

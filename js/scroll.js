@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(scrollPos);
 
     if (scrollPos > 100 && !isScrolled) {
-      img.style.width = "75px";
-      img.style.height = "75px";
+      img.style.width = "100px";
+      img.style.height = "100px";
       img.style.boxShadow = "0 0 0 2px #fff";
       // header.style.height = "100px";
       header.style.alignItems = "center";

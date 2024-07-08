@@ -9,12 +9,32 @@ html {
 }
 
 body {
+  font-size: 13px;
   position: relative;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #333;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #999999;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h3,
+span {
+  font-weight: bold;
 }
 
 /* wrapper */
@@ -91,6 +111,10 @@ nav a::before {
   transition: width 0.25s ease-in-out;
 }
 
+nav a:hover {
+  color: white;
+}
+
 nav a:hover::before {
   width: 100%;
 }
@@ -132,7 +156,7 @@ main {
 
 section {
   display: flex;
-  margin: 20px;
+  margin: 10px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -179,8 +203,7 @@ section {
 /* about */
 
 .about {
-  /* margin: 50px, 50px; */
-  padding-bottom: 20px;
+  margin: 30px 0;
 }
 
 .about h2 {
@@ -209,6 +232,11 @@ section {
   margin: 0 25%;
 }
 
+.exper span {
+  margin: 0 25%;
+  padding-bottom: 15px;
+}
+
 .exper p {
   text-align: justify;
   /* padding-top: 10px; */
@@ -220,17 +248,22 @@ section {
 
 .education {
   flex: 1;
-  padding-bottom: 20px;
+  margin: 20px 0;
 }
 
 .education h2 {
   margin: 0 25%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
 }
 
 .education h3 {
   margin: 0 25%;
+}
+
+.education span {
+  margin: 0 25%;
+  padding-bottom: 15px;
 }
 
 .education p {
@@ -242,19 +275,27 @@ section {
 
 /* code  */
 
-/* .code {
-  text-align: center;
-} */
+.code {
+  margin: 20px 0;
+}
 
 .code_wrapper {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0;
+}
+
+.code h2 {
+  margin: 0 25%;
+  padding-bottom: 10px;
 }
 
 .item {
-  flex: 1;
+  /* flex: 1; */
   /* text-align: center; */
-  padding: 10px;
+  margin: 10px;
 }
 
 .item img {

@@ -155,6 +155,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>CV</title>
     <link rel="icon" type="image/png" href="assets/icons/64/cv_64.png" />
@@ -234,7 +238,7 @@
         </section>
         <section id="about">
           <div class="about">
-            <h2>about me</h2>
+            <h2>__about me__</h2>
             <p>
               Hi, I'm a frontend developer from Moscow. I create web pages as
               part of training courses, but I am looking for an opportunity to
@@ -248,11 +252,11 @@
         </section>
         <section id="experience">
           <div class="exper">
-            <h2>experience</h2>
+            <h2>__experience__</h2>
             <h3>IT-Incubator practice</h3>
-            <p>since 2023</p>
+            <p>since 2024</p>
             <p>
-              I am part of a team developing an Instagram-like social network on
+              I`m part of a team developing an Instagram-like social network on
               the React/NextJS/TS stack. I implement UI,
               Google-authorization/loginisation, participate in team events, use
               Jira to organize processes.
@@ -260,11 +264,11 @@
             <h3>InsBro</h3>
             <p>since 2008</p>
             <p>
-              I am the co-founder and CEO of an insurance brokerage company. We
+              I`m the co-founder and CEO of an insurance brokerage company. We
               specialize in retail sales through a network of offices such as
               auto insurance and property protection. Also our main line of
               business is health care for companies. During my time in the
-              company I have implemented projects of online sales of insurance
+              company I`ve implemented projects of online sales of insurance
               products, global health protection program for work teams.
             </p>
             <h3>Yandex.Money</h3>
@@ -277,43 +281,56 @@
         </section>
         <section id="education">
           <div class="education">
-            <h2>education</h2>
+            <h2>__education__</h2>
             <h3>IT-Incubator practice</h3>
+            <p>since 2024</p>
+            <p>development of a social network</p>
+            <h3>RS School</h3>
             <p>since 2023</p>
+            <p>pre-school, stage 1-2 courses</p>
+            <h3>
+              Moscow State University of Economics, Statistics and Informatics
+            </h3>
+            <p>1996-2002</p>
             <p>
-              I am part of a team developing an Instagram-like social network on
-              the React/NextJS/TS stack. I implement UI,
-              Google-authorization/loginisation, participate in team events, use
-              Jira to organize processes.
-            </p>
-            <h3>InsBro</h3>
-            <p>since 2008</p>
-            <p>
-              I am the co-founder and CEO of an insurance brokerage company. We
-              specialize in retail sales through a network of offices such as
-              auto insurance and property protection. Also our main line of
-              business is health care for companies. During my time in the
-              company I have implemented projects of online sales of insurance
-              products, global health protection program for work teams.
-            </p>
-            <h3>Yandex.Money</h3>
-            <p>2006-2007</p>
-            <p>
-              I was in charge of marketing the payment system and developing a
-              network of online partner resources.
+              corporate information systems, applied informatics in economics,
+              specialist
             </p>
           </div>
         </section>
         <section id="code">
-          <h2>code examples</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat
-            facilis accusantium delectus eius? Repellat voluptate porro
-            distinctio ex quos voluptas repellendus odio, recusandae deserunt
-            libero culpa delectus molestiae. Est quas quia aliquid. Eveniet a
-            molestiae ex debitis accusamus nisi odit consequatur at magni
-            deleniti, repellendus eaque exercitationem maiores saepe.
-          </p>
+          <div class="code">
+            <h2>__code examples__</h2>
+            <div class="code_wrapper">
+              <a
+                class="item"
+                href="https://gromovboris.github.io/virtual-keyboard/"
+                target="_blank"
+                ><img src="assets/img/keyboard.png" alt="keyboard"
+              /></a>
+              <div class="item">
+                <pre class="bg-dark text-light p-2">
+function createSecretHolder(secret) {
+    return {
+    getSecret: function() {
+        return secret;
+    },
+    setSecret: function(v) {
+        secret = v;
+    }
+  };
+}
+                    </pre
+                >
+              </div>
+              <a
+                class="item"
+                href="https://gromovboris.github.io/cssBayan/cssBayan/index.html"
+                target="_blank"
+                ><img src="assets/img/bayan.png" alt="bayan"
+              /></a>
+            </div>
+          </div>
         </section>
         <section id="skills">
           <h2>skills</h2>

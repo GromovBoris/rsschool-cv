@@ -216,6 +216,52 @@ section {
   padding-bottom: 20px;
 }
 
+/* education */
+
+.education {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.education h2 {
+  margin: 0 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.education h3 {
+  margin: 0 25%;
+}
+
+.education p {
+  text-align: justify;
+  /* padding-top: 10px; */
+  margin: 0 25%;
+  padding-bottom: 20px;
+}
+
+/* code  */
+
+/* .code {
+  text-align: center;
+} */
+
+.code_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  flex: 1;
+  /* text-align: center; */
+  padding: 10px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* footer */
 
 footer {

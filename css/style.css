@@ -201,6 +201,11 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+#experience::before {
+  margin-top: 200px;
+}
+
 #experience h3,
 #experience p {
   margin: 10px 0;

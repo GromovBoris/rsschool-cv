@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollPos = window.scrollY;
     console.log(scrollPos);
 
-    if (scrollPos > 100 && !isScrolled) {
+    if (scrollPos > 120 && !isScrolled) {
       img.style.width = "100px";
       img.style.height = "100px";
       img.style.boxShadow = "0 0 0 2px #fff";
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       calls.style.marginTop = "0px";
       calls.style.marginBottom = "0px";
       isScrolled = true;
-    } else if (scrollPos <= 100 && isScrolled) {
+    } else if (scrollPos <= 120 && isScrolled) {
       img.style.width = "150px";
       img.style.height = "150px";
       img.style.boxShadow = "0 0 0 5px #fff";
@@ -30,6 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
       calls.style.marginBottom = "20px";
       isScrolled = false;
     }
+  });
+
+  document.querySelectorAll("nav a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const headerHeight = 220;
+        const targetPosition = targetElement.offsetTop - headerHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
   });
 });
 

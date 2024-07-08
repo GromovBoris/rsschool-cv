@@ -143,14 +143,12 @@ section {
   justify-content: space-around;
 }
 
-.me_block {
-  flex: 1;
-}
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .short_info {
@@ -181,7 +179,6 @@ section {
 /* about */
 
 .about {
-  text-align: left;
   /* margin: 50px, 50px; */
   padding-bottom: 20px;
 }
@@ -190,25 +187,33 @@ section {
   margin: 0 25%;
 }
 .about p {
+  text-align: justify;
   padding-top: 10px;
   margin: 0 25%;
 }
 
-/* experienxe */
+/* experienсe */
 
-#experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.exper {
+  flex: 1;
+  padding-bottom: 20px;
 }
 
-#experience::before {
-  margin-top: 200px;
+.exper h2 {
+  margin: 0 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-#experience h3,
-#experience p {
-  margin: 10px 0;
+.exper h3 {
+  margin: 0 25%;
+}
+
+.exper p {
+  text-align: justify;
+  /* padding-top: 10px; */
+  margin: 0 25%;
+  padding-bottom: 20px;
 }
 
 /* footer */

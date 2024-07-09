@@ -303,6 +303,22 @@ section {
   height: auto;
 }
 
+/* skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.skills {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* grid-template-columns: 1fr 1fr; */
+  margin: 20px 0;
+}
+
 /* footer */
 
 footer {
